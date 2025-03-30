@@ -2,9 +2,10 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}', // If using App Router
+    './src/**/*.{js,ts,jsx,tsx,mdx}', // Use a broader pattern to scan all files in src
+    // './src/pages/**/*.{js,ts,jsx,tsx,mdx}', // Covered by the pattern above
+    // './src/components/**/*.{js,ts,jsx,tsx,mdx}', // Covered by the pattern above
+    // './src/app/**/*.{js,ts,jsx,tsx,mdx}', // Still unnecessary for Pages Router
   ],
   theme: {
     extend: {
