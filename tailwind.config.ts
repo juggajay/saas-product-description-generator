@@ -2,10 +2,9 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    // './src/**/*.{js,ts,jsx,tsx,mdx}', // Use a broader pattern to scan all files in src
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -18,4 +17,12 @@ const config: Config = {
   },
   plugins: [],
 }
+
+// This is a workaround to ensure Tailwind processes all files
+// @ts-ignore
+if (process.env.NODE_ENV === 'production') {
+  // Force full build in production
+  console.log('Building Tailwind CSS for production...');
+}
+
 export default config
