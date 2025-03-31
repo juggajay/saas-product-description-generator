@@ -25,15 +25,15 @@ export default function Home() {
           </p>
         </div>
         
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 custom-card">
+        <div className="max-w-md mx-auto card custom-card">
           <p className="text-center mb-6">
             Sign in to get started or create a new account
           </p>
           <div className="flex flex-col space-y-4">
-            <button className="sign-in-button">
+            <button className="btn btn-primary sign-in-button">
               Sign In
             </button>
-            <button className="create-account-button">
+            <button className="btn btn-secondary create-account-button">
               Create Account
             </button>
           </div>
