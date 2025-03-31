@@ -1,3 +1,4 @@
+import '../styles/custom.css'; // Import custom CSS first
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { AuthProvider } from '../contexts/AuthContext';

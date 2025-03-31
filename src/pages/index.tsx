@@ -18,7 +18,14 @@ export default function Home() {
           Create compelling, SEO-optimized product descriptions for your e-commerce store
         </p>
         
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+        {/* Test element with custom CSS classes */}
+        <div className="test-bg p-4 mb-6 rounded-lg mx-auto max-w-md">
+          <p className="test-text text-center">
+            This is a test element with custom CSS classes to verify CSS loading
+          </p>
+        </div>
+        
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 custom-card">
           <p className="text-center mb-6">
             Sign in to get started or create a new account
           </p>

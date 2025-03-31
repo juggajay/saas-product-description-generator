@@ -1,0 +1,28 @@
+/* Basic styles to test CSS loading on Vercel */
+.test-bg {
+  background-color: #f0f0f0;
+}
+
+.test-text {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Override some basic elements to ensure CSS is loading */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+}
+
+/* Add some basic card styling that doesn't rely on Tailwind */
+.custom-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}

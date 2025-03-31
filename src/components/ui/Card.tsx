@@ -17,7 +17,7 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`bg-white shadow-md rounded-lg overflow-hidden ${className}`}
+      className={`bg-white shadow-md rounded-lg overflow-hidden custom-card ${className}`}
       onClick={onClick} // Apply onClick to the div
     >
       {title && (
