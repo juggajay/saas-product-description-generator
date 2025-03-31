@@ -30,10 +30,10 @@ export default function Home() {
             Sign in to get started or create a new account
           </p>
           <div className="flex flex-col space-y-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded">
+            <button className="sign-in-button">
               Sign In
             </button>
-            <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded">
+            <button className="create-account-button">
               Create Account
             </button>
           </div>
